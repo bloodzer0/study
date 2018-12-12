@@ -317,9 +317,38 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        docker概述
+      </label>
+    
     <a href="./" title="docker概述" class="md-nav__link md-nav__link--active">
       docker概述
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#docker_1" title="docker常用命令" class="md-nav__link">
+    docker常用命令
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -646,6 +675,22 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#docker_1" title="docker常用命令" class="md-nav__link">
+    docker常用命令
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -658,6 +703,105 @@
                 
                 
                 <h1 id="docker">docker概述</h1>
+<h2 id="docker_1">docker常用命令</h2>
+<table>
+<thead>
+<tr>
+<th>Note</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>获取镜像</td>
+<td>docker pull name[:tag]</td>
+</tr>
+<tr>
+<td>查看镜像信息</td>
+<td>docker images</td>
+</tr>
+<tr>
+<td>查看镜像详细</td>
+<td>docker inspect name:tag</td>
+</tr>
+<tr>
+<td>查看镜像历史</td>
+<td>docker history name:tag</td>
+</tr>
+<tr>
+<td>添加镜像标签</td>
+<td>docker tag name:tag name:tag</td>
+</tr>
+<tr>
+<td>搜索镜像</td>
+<td>docker search</td>
+</tr>
+<tr>
+<td>删除镜像</td>
+<td>docker rmi name:tag</td>
+</tr>
+<tr>
+<td>创建镜像</td>
+<td>docker commit</td>
+</tr>
+<tr>
+<td>导入镜像</td>
+<td>docker import</td>
+</tr>
+<tr>
+<td>存储镜像</td>
+<td>docker save</td>
+</tr>
+<tr>
+<td>载入镜像</td>
+<td>docker load</td>
+</tr>
+<tr>
+<td>上传镜像</td>
+<td>docker push</td>
+</tr>
+<tr>
+<td>创建容器</td>
+<td>docker create -it name:tag</td>
+</tr>
+<tr>
+<td>启动容器</td>
+<td>docker start</td>
+</tr>
+<tr>
+<td>新建并启动</td>
+<td>docker run</td>
+</tr>
+<tr>
+<td>守护状态运行</td>
+<td>docker run -d</td>
+</tr>
+<tr>
+<td>查看容器</td>
+<td>docker ps</td>
+</tr>
+<tr>
+<td>停止容器</td>
+<td>docker stop</td>
+</tr>
+<tr>
+<td>进入容器</td>
+<td>docker attach/docker exec -it *** bash</td>
+</tr>
+<tr>
+<td>删除容器</td>
+<td>docker rm</td>
+</tr>
+<tr>
+<td>导出容器</td>
+<td>docker export</td>
+</tr>
+<tr>
+<td>导入容器</td>
+<td>docker import</td>
+</tr>
+</tbody>
+</table>
                 
                   
                 
