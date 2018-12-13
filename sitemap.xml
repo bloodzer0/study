@@ -51,6 +51,16 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://bloodzer0.github.io/study/operation-system/linux/ipset/</loc>
+     <lastmod>2018-12-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://bloodzer0.github.io/study/operation-system/linux/iptables/</loc>
+     <lastmod>2018-12-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://bloodzer0.github.io/study/program-development/</loc>
      <lastmod>2018-12-12</lastmod>
      <changefreq>daily</changefreq>
