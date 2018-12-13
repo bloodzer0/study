@@ -13,7 +13,7 @@
         <meta name="description" content="技术成长之路">
       
       
-        <link rel="canonical" href="https://bloodzer0.github.io/study/program-development/python/python-module-mysqldb/">
+        <link rel="canonical" href="https://bloodzer0.github.io/study/database/mysql/">
       
       
         <meta name="author" content="bloodzer0">
@@ -37,21 +37,21 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.1.0">
     
     
       
-        <title>Python module mysqldb - bloodzer0 study</title>
+        <title>Mysql - bloodzer0 study</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/application.11e41852.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.11e41852.css">
       
       
     
     
-      <script src="../../../assets/javascripts/modernizr.20ef595d.js"></script>
+      <script src="../../assets/javascripts/modernizr.20ef595d.js"></script>
     
     
       
@@ -60,7 +60,7 @@
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
-    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
     
     
     
@@ -97,6 +97,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#centos7mysql" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -119,7 +123,7 @@
                 bloodzer0 study
               </span>
               <span class="md-header-nav__topic">
-                Python module mysqldb
+                Mysql
               </span>
             
           
@@ -236,7 +240,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../.." title="技术学习记录" class="md-nav__link">
+    <a href="../.." title="技术学习记录" class="md-nav__link">
       技术学习记录
     </a>
   </li>
@@ -267,7 +271,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../big-data/" title="大数据概述" class="md-nav__link">
+    <a href="../../big-data/" title="大数据概述" class="md-nav__link">
       大数据概述
     </a>
   </li>
@@ -282,10 +286,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
       Database
@@ -303,7 +309,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../database/" title="数据库概述" class="md-nav__link">
+    <a href="../" title="数据库概述" class="md-nav__link">
       数据库概述
     </a>
   </li>
@@ -313,11 +319,45 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../../database/mysql/" title="Mysql" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Mysql
+      </label>
+    
+    <a href="./" title="Mysql" class="md-nav__link md-nav__link--active">
       Mysql
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#centos7mysql" title="Centos7安装MySQL" class="md-nav__link">
+    Centos7安装MySQL
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -351,7 +391,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../docker/" title="docker概述" class="md-nav__link">
+    <a href="../../docker/" title="docker概述" class="md-nav__link">
       docker概述
     </a>
   </li>
@@ -387,7 +427,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../miscellaneous/" title="杂项概述" class="md-nav__link">
+    <a href="../../miscellaneous/" title="杂项概述" class="md-nav__link">
       杂项概述
     </a>
   </li>
@@ -399,7 +439,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../miscellaneous/mkdocs/" title="Mkdocs" class="md-nav__link">
+    <a href="../../miscellaneous/mkdocs/" title="Mkdocs" class="md-nav__link">
       Mkdocs
     </a>
   </li>
@@ -435,7 +475,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../operation-system/" title="操作系统概述" class="md-nav__link">
+    <a href="../../operation-system/" title="操作系统概述" class="md-nav__link">
       操作系统概述
     </a>
   </li>
@@ -466,7 +506,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../operation-system/linux/" title="Linux学习" class="md-nav__link">
+    <a href="../../operation-system/linux/" title="Linux学习" class="md-nav__link">
       Linux学习
     </a>
   </li>
@@ -486,12 +526,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
     
     <label class="md-nav__link" for="nav-7">
       Program development
@@ -509,7 +547,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../" title="程序开发概述" class="md-nav__link">
+    <a href="../../program-development/" title="程序开发概述" class="md-nav__link">
       程序开发概述
     </a>
   </li>
@@ -519,12 +557,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-2" type="checkbox" id="nav-7-2" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-2" type="checkbox" id="nav-7-2">
     
     <label class="md-nav__link" for="nav-7-2">
       Python
@@ -542,7 +578,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../" title="python开发概述" class="md-nav__link">
+    <a href="../../program-development/python/" title="python开发概述" class="md-nav__link">
       python开发概述
     </a>
   </li>
@@ -552,18 +588,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-    <a href="./" title="Python module mysqldb" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../program-development/python/python-module-mysqldb/" title="Python module mysqldb" class="md-nav__link">
       Python module mysqldb
     </a>
-    
   </li>
 
         
@@ -573,7 +602,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../python-module-virtualenv/" title="Python module virtualenv" class="md-nav__link">
+    <a href="../../program-development/python/python-module-virtualenv/" title="Python module virtualenv" class="md-nav__link">
       Python module virtualenv
     </a>
   </li>
@@ -614,7 +643,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../protocol-analysis/" title="协议分析概述" class="md-nav__link">
+    <a href="../../protocol-analysis/" title="协议分析概述" class="md-nav__link">
       协议分析概述
     </a>
   </li>
@@ -650,7 +679,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../software/" title="软件使用指南" class="md-nav__link">
+    <a href="../../software/" title="软件使用指南" class="md-nav__link">
       软件使用指南
     </a>
   </li>
@@ -662,7 +691,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../software/git-command/" title="Git command" class="md-nav__link">
+    <a href="../../software/git-command/" title="Git command" class="md-nav__link">
       Git command
     </a>
   </li>
@@ -680,17 +709,65 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#centos7mysql" title="Centos7安装MySQL" class="md-nav__link">
+    Centos7安装MySQL
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
                 
-                  <h1>Python module mysqldb</h1>
+                  <h1>Mysql</h1>
                 
-                <pre><code>pip install mysql-python
+                <h2 id="centos7mysql">Centos7安装MySQL</h2>
+<p>如果使用默认的yum源安装的是mariadb，版本比较低。</p>
+<pre><code># MySQL yum源官网地址
+# https://dev.mysql.com/downloads/repo/yum/
 
-# 备注：报错 mysql_config not found，通过安装mysql-devel解决
+# 下载yum源
+wget https://repo.mysql.com//mysql80-community-release-el7-1.noarch.rpm
+
+# 安装yum源
+rpm -ivh mysql80-community-release-el7-1.noarch.rpm
+
+# 安装MySQL
+yum install mysql-community-server.x86_64 mysql-community-client.x86_64 -y
+
+# 启动服务
+systemctl start mysqld.service
+
+# 查看初始密码
+cat /var/log/mysqld.log | grep pass
+
+# 修改密码
+alter user 'root'@'localhost' identified by 'your password';
 </code></pre>
                 
                   
@@ -712,7 +789,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../" title="python开发概述" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../" title="数据库概述" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -721,19 +798,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                python开发概述
+                数据库概述
               </span>
             </div>
           </a>
         
         
-          <a href="../python-module-virtualenv/" title="Python module virtualenv" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../docker/" title="docker概述" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Python module virtualenv
+                docker概述
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -767,9 +844,9 @@
       
     </div>
     
-      <script src="../../../assets/javascripts/application.9e1f3b71.js"></script>
+      <script src="../../assets/javascripts/application.9e1f3b71.js"></script>
       
-      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
       
     
     
