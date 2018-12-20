@@ -42,7 +42,7 @@
     
     
       
-        <title>nginx - bloodzer0 study</title>
+        <title>Nginx - bloodzer0 study</title>
       
     
     
@@ -123,7 +123,7 @@
                 bloodzer0 study
               </span>
               <span class="md-header-nav__topic">
-                nginx
+                Nginx
               </span>
             
           
@@ -858,11 +858,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        nginx
+        Nginx
       </label>
     
-    <a href="./" title="nginx" class="md-nav__link md-nav__link--active">
-      nginx
+    <a href="./" title="Nginx" class="md-nav__link md-nav__link--active">
+      Nginx
     </a>
     
       
@@ -898,6 +898,13 @@
         <li class="md-nav__item">
   <a href="#nginx_1" title="Nginx日志字段解析" class="md-nav__link">
     Nginx日志字段解析
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nginxlogstash" title="Nginx与Logstash直接传输数据" class="md-nav__link">
+    Nginx与Logstash直接传输数据
   </a>
   
 </li>
@@ -965,6 +972,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#nginxlogstash" title="Nginx与Logstash直接传输数据" class="md-nav__link">
+    Nginx与Logstash直接传输数据
+  </a>
+  
+</li>
+      
       
       
       
@@ -982,7 +996,7 @@
               
                 
                 
-                <h1 id="nginx">nginx</h1>
+                <h1 id="nginx">Nginx</h1>
 <h2 id="_1">安装与使用</h2>
 <pre><code># Centos7安装nginx
 yum install epel-release -y
@@ -1096,6 +1110,12 @@ nginx -s reload
 </tr>
 </tbody>
 </table>
+<h2 id="nginxlogstash">Nginx与Logstash直接传输数据</h2>
+<p>配置nginx.conf文件</p>
+<pre><code>log_format logstash escape=json '{&quot;timestamp&quot;: &quot;$time_local&quot;,&quot;**&quot;: &quot;$**&quot;}';
+
+access_log syslog:server=xxx.xxx.xxx.xxx:xxx,nohostname,tag=nginx_access_log logstash;
+</code></pre>
                 
                   
                 
