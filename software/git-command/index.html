@@ -42,7 +42,7 @@
     
     
       
-        <title>Git command - bloodzer0 study</title>
+        <title>github command - bloodzer0 study</title>
       
     
     
@@ -97,7 +97,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#_1" tabindex="1" class="md-skip">
+      <a href="#github-command" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -123,7 +123,7 @@
                 bloodzer0 study
               </span>
               <span class="md-header-nav__topic">
-                Git command
+                github command
               </span>
             
           
@@ -842,37 +842,12 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
+      
     
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Git command
-      </label>
     
-    <a href="./" title="Git command" class="md-nav__link md-nav__link--active">
-      Git command
+    <a href="./" title="github command" class="md-nav__link md-nav__link--active">
+      github command
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" title="常用命令" class="md-nav__link">
-    常用命令
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
     
   </li>
 
@@ -908,22 +883,8 @@
 <nav class="md-nav md-nav--secondary">
   
   
+    
   
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" title="常用命令" class="md-nav__link">
-    常用命令
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
   
 </nav>
                   </div>
@@ -936,9 +897,37 @@
               
                 
                 
-                  <h1>Git command</h1>
-                
-                <h2 id="_1">常用命令</h2>
+                <h1 id="github-command">github command</h1>
+<p><strong>删除commit</strong></p>
+<pre><code># 在web界面commit找到你需要回滚的hash值
+# 举例：645ccfcaaed42f7cb55274355144ee3d998bbb70
+
+# 选择branchs
+git checkout master
+
+# 回滚
+git reset --hard 645ccfcaaed42f7cb55274355144ee3d998bbb70
+
+# push
+git push origin HEAD --force
+</code></pre>
+
+<p><strong>概念理解</strong></p>
+<pre><code>commits：提交历史
+branch：分支
+releases：发布
+environment：环境
+contributor：参与者
+</code></pre>
+
+<p><strong>重新初始化项目</strong></p>
+<pre><code>rm -fr .git
+git init
+git remote add origin git@github.com:bloodzer0/ossa.git
+git add -A
+git commit -am&quot;init&quot;
+git push -f origin master
+</code></pre>
                 
                   
                 
