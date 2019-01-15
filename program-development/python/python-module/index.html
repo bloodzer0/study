@@ -13,7 +13,7 @@
         <meta name="description" content="技术成长之路">
       
       
-        <link rel="canonical" href="https://bloodzer0.github.io/study/program-development/python/python-module-mysqldb/">
+        <link rel="canonical" href="https://bloodzer0.github.io/study/program-development/python/python-module/">
       
       
         <meta name="author" content="bloodzer0">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Python module mysqldb - bloodzer0 study</title>
+        <title>python模块 - bloodzer0 study</title>
       
     
     
@@ -97,6 +97,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#python" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -119,7 +123,7 @@
                 bloodzer0 study
               </span>
               <span class="md-header-nav__topic">
-                Python module mysqldb
+                python模块
               </span>
             
           
@@ -703,23 +707,13 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
+      
     
-    <a href="./" title="Python module mysqldb" class="md-nav__link md-nav__link--active">
-      Python module mysqldb
+    
+    <a href="./" title="python模块" class="md-nav__link md-nav__link--active">
+      python模块
     </a>
     
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../python-module-virtualenv/" title="Python module virtualenv" class="md-nav__link">
-      Python module virtualenv
-    </a>
   </li>
 
         
@@ -884,17 +878,58 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
                 
-                  <h1>Python module mysqldb</h1>
-                
-                <pre><code>pip install mysql-python
+                <h1 id="python">python模块</h1>
+<ul>
+<li><strong>MySQldb</strong></li>
+</ul>
+<pre><code>pip install mysql-python
 
 # 备注：报错 mysql_config not found，通过安装mysql-devel解决
+</code></pre>
+
+<ul>
+<li><strong>virtualenv</strong></li>
+</ul>
+<pre><code># 安装
+pip install virtualenv
+
+# 创建环境
+# 安装python3.6
+yum install python36.x86_64 python36-devel.x86_64 python36-libs.x86_64 -y
+
+# 创建一个python3的虚拟环境
+virtualenv py3 --python=python3.6
+
+# 激活环境
+source py3/bin/activate
+
+# 退出环境
+deactivate
+
+# 创建软链接
+echo &quot;alias py3='source /root/py3/bin/activate'&quot; &gt;&gt; /root/.bashrc
+source root/.bashrc
 </code></pre>
                 
                   
@@ -931,13 +966,13 @@
           </a>
         
         
-          <a href="../python-module-virtualenv/" title="Python module virtualenv" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../ruby/" title="ruby开发概述" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Python module virtualenv
+                ruby开发概述
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

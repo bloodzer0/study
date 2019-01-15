@@ -2,127 +2,122 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://bloodzer0.github.io/study/</loc>
-     <lastmod>2018-12-20</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://bloodzer0.github.io/study/big-data/</loc>
-     <lastmod>2018-12-20</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://bloodzer0.github.io/study/big-data/kafka/</loc>
-     <lastmod>2018-12-20</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://bloodzer0.github.io/study/big-data/zookeeper/</loc>
-     <lastmod>2018-12-20</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://bloodzer0.github.io/study/database/</loc>
-     <lastmod>2018-12-20</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://bloodzer0.github.io/study/database/mysql/</loc>
-     <lastmod>2018-12-20</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://bloodzer0.github.io/study/database/postgresql/</loc>
-     <lastmod>2018-12-20</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://bloodzer0.github.io/study/docker/</loc>
-     <lastmod>2018-12-20</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://bloodzer0.github.io/study/miscellaneous/</loc>
-     <lastmod>2018-12-20</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://bloodzer0.github.io/study/miscellaneous/mkdocs/</loc>
-     <lastmod>2018-12-20</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://bloodzer0.github.io/study/miscellaneous/ci-cd/</loc>
-     <lastmod>2018-12-20</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://bloodzer0.github.io/study/operation-system/</loc>
-     <lastmod>2018-12-20</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://bloodzer0.github.io/study/operation-system/linux/</loc>
-     <lastmod>2018-12-20</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://bloodzer0.github.io/study/operation-system/linux/ipset/</loc>
-     <lastmod>2018-12-20</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://bloodzer0.github.io/study/operation-system/linux/iptables/</loc>
-     <lastmod>2018-12-20</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://bloodzer0.github.io/study/program-development/</loc>
-     <lastmod>2018-12-20</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://bloodzer0.github.io/study/program-development/python/</loc>
-     <lastmod>2018-12-20</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://bloodzer0.github.io/study/program-development/python/python-module-mysqldb/</loc>
-     <lastmod>2018-12-20</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://bloodzer0.github.io/study/program-development/python/python-module-virtualenv/</loc>
-     <lastmod>2018-12-20</lastmod>
+     <loc>https://bloodzer0.github.io/study/program-development/python/python-module/</loc>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://bloodzer0.github.io/study/program-development/ruby/</loc>
-     <lastmod>2018-12-20</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://bloodzer0.github.io/study/protocol-analysis/</loc>
-     <lastmod>2018-12-20</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://bloodzer0.github.io/study/software/</loc>
-     <lastmod>2018-12-20</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://bloodzer0.github.io/study/software/git-command/</loc>
-     <lastmod>2018-12-20</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://bloodzer0.github.io/study/software/ldap/</loc>
-     <lastmod>2018-12-20</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://bloodzer0.github.io/study/software/nginx/</loc>
-     <lastmod>2018-12-20</lastmod>
+     <lastmod>2019-01-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
