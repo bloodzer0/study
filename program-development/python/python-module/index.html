@@ -710,9 +710,52 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        python模块
+      </label>
+    
     <a href="./" title="python模块" class="md-nav__link md-nav__link--active">
       python模块
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#anaconda" title="anaconda" class="md-nav__link">
+    anaconda
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mysqldb" title="MySQldb" class="md-nav__link">
+    MySQldb
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#virtualenv" title="virtualenv" class="md-nav__link">
+    virtualenv
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -888,6 +931,36 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#anaconda" title="anaconda" class="md-nav__link">
+    anaconda
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mysqldb" title="MySQldb" class="md-nav__link">
+    MySQldb
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#virtualenv" title="virtualenv" class="md-nav__link">
+    virtualenv
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -900,17 +973,64 @@
                 
                 
                 <h1 id="python">python模块</h1>
+<h2 id="anaconda">anaconda</h2>
+<p><a href="https://www.anaconda.com/download/">下载地址</a></p>
 <ul>
-<li><strong>MySQldb</strong></li>
+<li><strong>安装anaconda</strong></li>
 </ul>
+<p>Centos7安装：依赖wget，vim，unzip，bzip2(必须安装)</p>
+<ul>
+<li><strong>常见操作</strong></li>
+</ul>
+<pre><code>conda --version # 查看是否成功安装
+conda list -n python34 # 查看指定环境已安装包
+conda search numpy # 查找package信息
+conda install -n python34 numpy # 指定环境安装包
+conda update -n python34 numpy # 更新包
+conda update conda # 更新conda
+conda update anaconda # 更新anaconada
+conda update python # 更新python
+</code></pre>
+
+<ul>
+<li><strong>环境管理</strong></li>
+</ul>
+<pre><code>conda create --name python34 python=3.4 # 创建一个名为python34的环境，指定python版本3.4(自动寻找最新版本)
+
+activate python34 # windows 或者 
+source activate python34 # mac/linux
+
+python --version # 查看此时的python版本
+
+deactivate python34 # windows 或者 
+source deactivate python34 # mac/linux
+
+conda remove --name python34 --all # 删除
+
+conda info -e # 查看当前所在的分支
+</code></pre>
+
+<ul>
+<li><strong>包管理</strong></li>
+</ul>
+<pre><code>conda install scipy # 安装scipy
+conda list # 查看已安装的packages
+</code></pre>
+
+<ul>
+<li><strong>镜像操作</strong></li>
+</ul>
+<pre><code>conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/ # 添加镜像
+conda config --set show_channel_urls yes # 设置搜索时显示通道地址
+</code></pre>
+
+<h2 id="mysqldb">MySQldb</h2>
 <pre><code>pip install mysql-python
 
 # 备注：报错 mysql_config not found，通过安装mysql-devel解决
 </code></pre>
 
-<ul>
-<li><strong>virtualenv</strong></li>
-</ul>
+<h2 id="virtualenv">virtualenv</h2>
 <pre><code># 安装
 pip install virtualenv
 
