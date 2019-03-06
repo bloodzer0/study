@@ -13,7 +13,7 @@
         <meta name="description" content="技术成长之路">
       
       
-        <link rel="canonical" href="https://bloodzer0.github.io/study/software/ldap/">
+        <link rel="canonical" href="https://bloodzer0.github.io/study/operation-system/linux/ldap/">
       
       
         <meta name="author" content="bloodzer0">
@@ -37,21 +37,21 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.1.0">
     
     
       
-        <title>LDAP 轻型目录访问协议 - bloodzer0 study</title>
+        <title>Centos7安装LDAP - bloodzer0 study</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application.11e41852.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.11e41852.css">
       
       
     
     
-      <script src="../../assets/javascripts/modernizr.20ef595d.js"></script>
+      <script src="../../../assets/javascripts/modernizr.20ef595d.js"></script>
     
     
       
@@ -60,7 +60,7 @@
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
-    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
     
     
     
@@ -97,7 +97,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#ldap" tabindex="1" class="md-skip">
+      <a href="#centos7ldap" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -123,7 +123,7 @@
                 bloodzer0 study
               </span>
               <span class="md-header-nav__topic">
-                LDAP 轻型目录访问协议
+                Centos7安装LDAP
               </span>
             
           
@@ -240,7 +240,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../.." title="技术学习记录" class="md-nav__link">
+    <a href="../../.." title="技术学习记录" class="md-nav__link">
       技术学习记录
     </a>
   </li>
@@ -271,7 +271,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../big-data/" title="大数据概述" class="md-nav__link">
+    <a href="../../../big-data/" title="大数据概述" class="md-nav__link">
       大数据概述
     </a>
   </li>
@@ -302,7 +302,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../big-data/kafka/" title="Kafka 分布式流处理系统" class="md-nav__link">
+    <a href="../../../big-data/kafka/" title="Kafka 分布式流处理系统" class="md-nav__link">
       Kafka 分布式流处理系统
     </a>
   </li>
@@ -338,7 +338,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../big-data/zookeeper/" title="Zookeeper 分布式协调服务" class="md-nav__link">
+    <a href="../../../big-data/zookeeper/" title="Zookeeper 分布式协调服务" class="md-nav__link">
       Zookeeper 分布式协调服务
     </a>
   </li>
@@ -379,7 +379,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../database/" title="数据库概述" class="md-nav__link">
+    <a href="../../../database/" title="数据库概述" class="md-nav__link">
       数据库概述
     </a>
   </li>
@@ -391,7 +391,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../database/mysql/" title="MySQL" class="md-nav__link">
+    <a href="../../../database/mysql/" title="MySQL" class="md-nav__link">
       MySQL
     </a>
   </li>
@@ -403,7 +403,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../database/postgresql/" title="Postgresql" class="md-nav__link">
+    <a href="../../../database/postgresql/" title="Postgresql" class="md-nav__link">
       Postgresql
     </a>
   </li>
@@ -439,7 +439,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../docker/" title="docker概述" class="md-nav__link">
+    <a href="../../../docker/" title="docker概述" class="md-nav__link">
       docker概述
     </a>
   </li>
@@ -475,7 +475,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../miscellaneous/" title="杂项概述" class="md-nav__link">
+    <a href="../../../miscellaneous/" title="杂项概述" class="md-nav__link">
       杂项概述
     </a>
   </li>
@@ -487,7 +487,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../miscellaneous/mkdocs/" title="Mkdocs" class="md-nav__link">
+    <a href="../../../miscellaneous/mkdocs/" title="Mkdocs" class="md-nav__link">
       Mkdocs
     </a>
   </li>
@@ -518,7 +518,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../miscellaneous/ci-cd/" title="持续集成与持续交付概述" class="md-nav__link">
+    <a href="../../../miscellaneous/ci-cd/" title="持续集成与持续交付概述" class="md-nav__link">
       持续集成与持续交付概述
     </a>
   </li>
@@ -538,10 +538,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
     
     <label class="md-nav__link" for="nav-6">
       Operation system
@@ -559,7 +561,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../operation-system/" title="操作系统概述" class="md-nav__link">
+    <a href="../../" title="操作系统概述" class="md-nav__link">
       操作系统概述
     </a>
   </li>
@@ -569,10 +571,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2" type="checkbox" id="nav-6-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2" type="checkbox" id="nav-6-2" checked>
     
     <label class="md-nav__link" for="nav-6-2">
       Linux
@@ -590,7 +594,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../operation-system/linux/" title="Linux学习" class="md-nav__link">
+    <a href="../" title="Linux学习" class="md-nav__link">
       Linux学习
     </a>
   </li>
@@ -602,7 +606,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../operation-system/linux/ansible/" title="Ansible" class="md-nav__link">
+    <a href="../ansible/" title="Ansible" class="md-nav__link">
       Ansible
     </a>
   </li>
@@ -614,7 +618,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../operation-system/linux/ipset/" title="Ipset" class="md-nav__link">
+    <a href="../ipset/" title="Ipset" class="md-nav__link">
       Ipset
     </a>
   </li>
@@ -626,255 +630,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../operation-system/linux/iptables/" title="Iptables" class="md-nav__link">
+    <a href="../iptables/" title="Iptables" class="md-nav__link">
       Iptables
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3" type="checkbox" id="nav-6-3">
-    
-    <label class="md-nav__link" for="nav-6-3">
-      Windows
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-6-3">
-        Windows
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../operation-system/windows/windows-password/" title="Windows密码基础" class="md-nav__link">
-      Windows密码基础
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
-    
-    <label class="md-nav__link" for="nav-7">
-      Program development
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-7">
-        Program development
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../program-development/" title="程序开发概述" class="md-nav__link">
-      程序开发概述
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-2" type="checkbox" id="nav-7-2">
-    
-    <label class="md-nav__link" for="nav-7-2">
-      Python
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-7-2">
-        Python
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../program-development/python/" title="python开发概述" class="md-nav__link">
-      python开发概述
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../program-development/python/python-module/" title="python模块" class="md-nav__link">
-      python模块
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-3" type="checkbox" id="nav-7-3">
-    
-    <label class="md-nav__link" for="nav-7-3">
-      Ruby
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-7-3">
-        Ruby
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../program-development/ruby/" title="ruby开发概述" class="md-nav__link">
-      ruby开发概述
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
-    
-    <label class="md-nav__link" for="nav-8">
-      Protocol analysis
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-8">
-        Protocol analysis
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../protocol-analysis/" title="协议分析概述" class="md-nav__link">
-      协议分析概述
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9" checked>
-    
-    <label class="md-nav__link" for="nav-9">
-      Software
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-9">
-        Software
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../" title="软件使用指南" class="md-nav__link">
-      软件使用指南
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../git-command/" title="github command" class="md-nav__link">
-      github command
     </a>
   </li>
 
@@ -894,11 +651,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        LDAP 轻型目录访问协议
+        Centos7安装LDAP
       </label>
     
-    <a href="./" title="LDAP 轻型目录访问协议" class="md-nav__link md-nav__link--active">
-      LDAP 轻型目录访问协议
+    <a href="./" title="Centos7安装LDAP" class="md-nav__link md-nav__link--active">
+      Centos7安装LDAP
     </a>
     
       
@@ -912,7 +669,7 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ldap_1" title="LDAP安装与使用" class="md-nav__link">
+  <a href="#ldap" title="LDAP安装与使用" class="md-nav__link">
     LDAP安装与使用
   </a>
   
@@ -920,7 +677,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ldap_2" title="安装与配置LDAP" class="md-nav__link">
+  <a href="#ldap_1" title="安装与配置LDAP" class="md-nav__link">
     安装与配置LDAP
   </a>
   
@@ -963,13 +720,258 @@
   </li>
 
         
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-3" type="checkbox" id="nav-6-3">
+    
+    <label class="md-nav__link" for="nav-6-3">
+      Windows
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-3">
+        Windows
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
           
           
           
 
 
   <li class="md-nav__item">
-    <a href="../nginx/" title="Nginx" class="md-nav__link">
+    <a href="../../windows/windows-password/" title="Windows密码基础" class="md-nav__link">
+      Windows密码基础
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Program development
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Program development
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../program-development/" title="程序开发概述" class="md-nav__link">
+      程序开发概述
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-2" type="checkbox" id="nav-7-2">
+    
+    <label class="md-nav__link" for="nav-7-2">
+      Python
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-2">
+        Python
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../program-development/python/" title="python开发概述" class="md-nav__link">
+      python开发概述
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../program-development/python/python-module/" title="python模块" class="md-nav__link">
+      python模块
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-3" type="checkbox" id="nav-7-3">
+    
+    <label class="md-nav__link" for="nav-7-3">
+      Ruby
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-3">
+        Ruby
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../program-development/ruby/" title="ruby开发概述" class="md-nav__link">
+      ruby开发概述
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Protocol analysis
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        Protocol analysis
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../protocol-analysis/" title="协议分析概述" class="md-nav__link">
+      协议分析概述
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+    
+    <label class="md-nav__link" for="nav-9">
+      Software
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
+        Software
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../software/" title="软件使用指南" class="md-nav__link">
+      软件使用指南
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../software/git-command/" title="github command" class="md-nav__link">
+      github command
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../software/nginx/" title="Nginx" class="md-nav__link">
       Nginx
     </a>
   </li>
@@ -1001,7 +1003,7 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ldap_1" title="LDAP安装与使用" class="md-nav__link">
+  <a href="#ldap" title="LDAP安装与使用" class="md-nav__link">
     LDAP安装与使用
   </a>
   
@@ -1009,7 +1011,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ldap_2" title="安装与配置LDAP" class="md-nav__link">
+  <a href="#ldap_1" title="安装与配置LDAP" class="md-nav__link">
     安装与配置LDAP
   </a>
   
@@ -1058,139 +1060,92 @@
               
                 
                 
-                <h1 id="ldap">LDAP 轻型目录访问协议</h1>
-<p>LDAP：Lightweight Directory Access Protocol</p>
-<h2 id="ldap_1">LDAP安装与使用</h2>
-<h3 id="ldap_2">安装与配置LDAP</h3>
+                <h1 id="centos7ldap">Centos7安装LDAP</h1>
+<p>LDAP：Lightweight Directory Access Protocol 轻型目录访问协议</p>
+<h2 id="ldap">LDAP安装与使用</h2>
+<h3 id="ldap_1">安装与配置LDAP</h3>
 <ul>
 <li><strong>安装OpenLDAP</strong></li>
 </ul>
-<pre><code>
-yum install -y openldap.x86_64 openldap-clients.x86_64 openldap-servers.x86_64 openldap-devel.x86_64 migrationtools.noarch compat-openldap.x86_64
-
+<pre><code>yum install -y openldap.x86_64 openldap-clients.x86_64 openldap-servers.x86_64 openldap-devel.x86_64 migrationtools.noarch compat-openldap.x86_64
 </code></pre>
 
 <ul>
 <li><strong>配置LDAP Server</strong></li>
 </ul>
-<pre><code>
-vim /etc/openldap/slapd.d/cn\=config/olcDatabase\=\{2\}hdb.ldif
-
+<pre><code>vim /etc/openldap/slapd.d/cn\=config/olcDatabase\=\{2\}hdb.ldif
 # 修改第8、9行，添加第10行
-
 olcSuffix: dc=bloodzer0,dc=com
-
 olcRootDN: cn=Manager,dc=bloodzer0,dc=com
-
 olcRootPW: bloodzer0
-
 </code></pre>
 
 <p><img alt="ldap-1" src="https://github.com/bloodzer0/study/raw/master/software/img/ldap-1.png" /></p>
 <ul>
 <li><strong>配置Monitoring Database</strong></li>
 </ul>
-<pre><code>
-vim /etc/openldap/slapd.d/cn\=config/olcDatabase\=\{1\}monitor.ldif
-
+<pre><code>vim /etc/openldap/slapd.d/cn\=config/olcDatabase\=\{1\}monitor.ldif
 # 修改第7行
-
 olcAccess: {0}to * by dn.base=&quot;gidNumber=0+uidNumber=0,cn=peercred,cn=extern
-
  al,cn=auth&quot; read by dn.base=&quot;cn=Manager,dc=bloodzer0,dc=com&quot; read by * none
-
 </code></pre>
 
 <p><img alt="ldap-2" src="https://github.com/bloodzer0/study/raw/master/software/img/ldap-2.png" /></p>
 <ul>
 <li><strong>配置LDAP数据库</strong></li>
 </ul>
-<pre><code>
-cp /usr/share/openldap-servers/DB_CONFIG.example /var/lib/ldap/DB_CONFIG
-
+<pre><code>cp /usr/share/openldap-servers/DB_CONFIG.example /var/lib/ldap/DB_CONFIG
 chown -R ldap.ldap /var/lib/ldap/
-
 </code></pre>
 
 <ul>
 <li><strong>测试并启动服务</strong></li>
 </ul>
-<pre><code>
-slaptest -u
-
+<pre><code>slaptest -u
 </code></pre>
 
 <p><img alt="ldap-3" src="https://github.com/bloodzer0/study/raw/master/software/img/ldap-3.png" /></p>
 <ul>
 <li><strong>启动服务</strong></li>
 </ul>
-<pre><code>
-# 启动之前记得关闭selinux
-
+<pre><code># 启动之前记得关闭selinux
 systemctl enable slapd.service
-
 systemctl start slapd.service
-
 </code></pre>
 
 <ul>
 <li><strong>导入schemas</strong></li>
 </ul>
-<pre><code>
-ldapadd -Y EXTERNAL -H ldapi:/// -D &quot;cn=config&quot; -f /etc/openldap/schema/cosine.ldif 
-
+<pre><code>ldapadd -Y EXTERNAL -H ldapi:/// -D &quot;cn=config&quot; -f /etc/openldap/schema/cosine.ldif 
 ldapadd -Y EXTERNAL -H ldapi:/// -D &quot;cn=config&quot; -f /etc/openldap/schema/nis.ldif 
-
 ldapadd -Y EXTERNAL -H ldapi:/// -D &quot;cn=config&quot; -f /etc/openldap/schema/collective.ldif 
-
 ldapadd -Y EXTERNAL -H ldapi:/// -D &quot;cn=config&quot; -f /etc/openldap/schema/corba.ldif 
-
 ldapadd -Y EXTERNAL -H ldapi:/// -D &quot;cn=config&quot; -f /etc/openldap/schema/core.ldif 
-
 ldapadd -Y EXTERNAL -H ldapi:/// -D &quot;cn=config&quot; -f /etc/openldap/schema/duaconf.ldif 
-
 ldapadd -Y EXTERNAL -H ldapi:/// -D &quot;cn=config&quot; -f /etc/openldap/schema/dyngroup.ldif 
-
 ldapadd -Y EXTERNAL -H ldapi:/// -D &quot;cn=config&quot; -f /etc/openldap/schema/inetorgperson.ldif 
-
 ldapadd -Y EXTERNAL -H ldapi:/// -D &quot;cn=config&quot; -f /etc/openldap/schema/java.ldif 
-
 ldapadd -Y EXTERNAL -H ldapi:/// -D &quot;cn=config&quot; -f /etc/openldap/schema/misc.ldif 
-
 ldapadd -Y EXTERNAL -H ldapi:/// -D &quot;cn=config&quot; -f /etc/openldap/schema/openldap.ldif 
-
 ldapadd -Y EXTERNAL -H ldapi:/// -D &quot;cn=config&quot; -f /etc/openldap/schema/pmi.ldif 
-
 ldapadd -Y EXTERNAL -H ldapi:/// -D &quot;cn=config&quot; -f /etc/openldap/schema/ppolicy.ldif
-
 </code></pre>
 
 <ul>
 <li><strong>配置basedomain文件</strong></li>
 </ul>
-<pre><code>
-vim /usr/share/migrationtools/migrate_common.ph
-
+<pre><code>vim /usr/share/migrationtools/migrate_common.ph
 # 修改第71、74、90行
-
 $DEFAULT_MAIL_DOMAIN = &quot;bloodzer0.com&quot;;
-
 $DEFAULT_BASE = &quot;dc=bloodzer0,dc=com&quot;;
-
 $EXTENDED_SCHEMA = 1;
-
 </code></pre>
 
 <p><img alt="ldap-4" src="https://github.com/bloodzer0/study/raw/master/software/img/ldap-4.png" /></p>
-<pre><code>
-/usr/share/migrationtools/migrate_base.pl &gt; /etc/openldap/basedomain.ldif
-
+<pre><code>/usr/share/migrationtools/migrate_base.pl &gt; /etc/openldap/basedomain.ldif
 # 导入文件
-
 ldapadd -x -D cn=Manager,dc=bloodzer0,dc=com -W -f /etc/openldap/basedomain.ldif
-
 # 输入之前配置olcRootPW密码
-
 </code></pre>
 
 <p><img alt="ldap-5" src="https://github.com/bloodzer0/study/raw/master/software/img/ldap-5.png" /></p>
@@ -1198,51 +1153,32 @@ ldapadd -x -D cn=Manager,dc=bloodzer0,dc=com -W -f /etc/openldap/basedomain.ldif
 <ul>
 <li><strong>安装phpldapadmin</strong></li>
 </ul>
-<pre><code>
-yum install epel-release -y
-
+<pre><code>yum install epel-release -y
 yum install phpldapadmin.noarch -y
-
 systemctl enable httpd.service
-
 systemctl start httpd.service
-
 </code></pre>
 
 <ul>
 <li><strong>修改配置</strong></li>
 </ul>
-<pre><code>
-# 修改httpd配置
-
+<pre><code># 修改httpd配置
 vim /etc/httpd/conf.d/phpldapadmin.conf
-
 # 添加Require all granted
-
 # 重启服务http服务
-
 # 访问：http://10.10.10.5/phpldapadmin/cmd.php
-
 # 此时是不能登录的
-
 </code></pre>
 
 <p><img alt="ldap-6" src="https://github.com/bloodzer0/study/raw/master/software/img/ldap-6.png" /></p>
-<pre><code>
-# 修改phpldapadmin配置
-
+<pre><code># 修改phpldapadmin配置
 vim /etc/phpldapadmin/config.php
-
 # 注释398，取消注释397
-
 </code></pre>
 
 <p><img alt="ldap-7" src="https://github.com/bloodzer0/study/raw/master/software/img/ldap-7.png" /></p>
-<pre><code>
-# 登录
-
+<pre><code># 登录
 # 用户名：cn=Manager,dc=bloodzer0,dc=com 密码：你设置的密码
-
 </code></pre>
 
 <p><img alt="ldap-8" src="https://github.com/bloodzer0/study/raw/master/software/img/ldap-8.png" /></p>
@@ -1272,7 +1208,7 @@ vim /etc/phpldapadmin/config.php
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../git-command/" title="github command" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../iptables/" title="Iptables" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1281,19 +1217,19 @@ vim /etc/phpldapadmin/config.php
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                github command
+                Iptables
               </span>
             </div>
           </a>
         
         
-          <a href="../nginx/" title="Nginx" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../windows/windows-password/" title="Windows密码基础" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Nginx
+                Windows密码基础
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -1327,9 +1263,9 @@ vim /etc/phpldapadmin/config.php
       
     </div>
     
-      <script src="../../assets/javascripts/application.9e1f3b71.js"></script>
+      <script src="../../../assets/javascripts/application.9e1f3b71.js"></script>
       
-      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
       
     
     
