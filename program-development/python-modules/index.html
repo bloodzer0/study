@@ -13,7 +13,7 @@
         <meta name="description" content="技术成长之路">
       
       
-        <link rel="canonical" href="https://bloodzer0.github.io/study/operation-system/linux/iptables/">
+        <link rel="canonical" href="https://bloodzer0.github.io/study/program-development/python-modules/">
       
       
         <meta name="author" content="bloodzer0">
@@ -37,21 +37,21 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.1.0">
     
     
       
-        <title>Iptables - bloodzer0 study</title>
+        <title>python模块学习 - bloodzer0 study</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/application.11e41852.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.11e41852.css">
       
       
     
     
-      <script src="../../../assets/javascripts/modernizr.20ef595d.js"></script>
+      <script src="../../assets/javascripts/modernizr.20ef595d.js"></script>
     
     
       
@@ -60,7 +60,7 @@
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
-    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
     
     
     
@@ -97,7 +97,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#iptables" tabindex="1" class="md-skip">
+      <a href="#python" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -123,7 +123,7 @@
                 bloodzer0 study
               </span>
               <span class="md-header-nav__topic">
-                Iptables
+                python模块学习
               </span>
             
           
@@ -240,7 +240,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../.." title="技术学习记录" class="md-nav__link">
+    <a href="../.." title="技术学习记录" class="md-nav__link">
       技术学习记录
     </a>
   </li>
@@ -271,7 +271,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../big-data/" title="大数据概述" class="md-nav__link">
+    <a href="../../big-data/" title="大数据概述" class="md-nav__link">
       大数据概述
     </a>
   </li>
@@ -302,7 +302,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../big-data/kafka/" title="Kafka 分布式流处理系统" class="md-nav__link">
+    <a href="../../big-data/kafka/" title="Kafka 分布式流处理系统" class="md-nav__link">
       Kafka 分布式流处理系统
     </a>
   </li>
@@ -338,7 +338,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../big-data/zookeeper/" title="Zookeeper 分布式协调服务" class="md-nav__link">
+    <a href="../../big-data/zookeeper/" title="Zookeeper 分布式协调服务" class="md-nav__link">
       Zookeeper 分布式协调服务
     </a>
   </li>
@@ -379,7 +379,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../database/" title="数据库概述" class="md-nav__link">
+    <a href="../../database/" title="数据库概述" class="md-nav__link">
       数据库概述
     </a>
   </li>
@@ -391,7 +391,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../database/mysql/" title="MySQL" class="md-nav__link">
+    <a href="../../database/mysql/" title="MySQL" class="md-nav__link">
       MySQL
     </a>
   </li>
@@ -403,7 +403,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../database/postgresql/" title="Postgresql" class="md-nav__link">
+    <a href="../../database/postgresql/" title="Postgresql" class="md-nav__link">
       Postgresql
     </a>
   </li>
@@ -439,7 +439,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../docker/" title="docker概述" class="md-nav__link">
+    <a href="../../docker/" title="docker概述" class="md-nav__link">
       docker概述
     </a>
   </li>
@@ -475,7 +475,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../miscellaneous/" title="杂项概述" class="md-nav__link">
+    <a href="../../miscellaneous/" title="杂项概述" class="md-nav__link">
       杂项概述
     </a>
   </li>
@@ -487,7 +487,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../miscellaneous/mkdocs/" title="Mkdocs" class="md-nav__link">
+    <a href="../../miscellaneous/mkdocs/" title="Mkdocs" class="md-nav__link">
       Mkdocs
     </a>
   </li>
@@ -518,7 +518,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../miscellaneous/ci-cd/" title="持续集成与持续交付概述" class="md-nav__link">
+    <a href="../../miscellaneous/ci-cd/" title="持续集成与持续交付概述" class="md-nav__link">
       持续集成与持续交付概述
     </a>
   </li>
@@ -538,12 +538,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
     
     <label class="md-nav__link" for="nav-6">
       Operation system
@@ -561,7 +559,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../" title="操作系统概述" class="md-nav__link">
+    <a href="../../operation-system/" title="操作系统概述" class="md-nav__link">
       操作系统概述
     </a>
   </li>
@@ -571,12 +569,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2" type="checkbox" id="nav-6-2" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-2" type="checkbox" id="nav-6-2">
     
     <label class="md-nav__link" for="nav-6-2">
       Linux
@@ -594,7 +590,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../" title="Linux学习" class="md-nav__link">
+    <a href="../../operation-system/linux/" title="Linux学习" class="md-nav__link">
       Linux学习
     </a>
   </li>
@@ -606,7 +602,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../ansible/" title="Ansible" class="md-nav__link">
+    <a href="../../operation-system/linux/ansible/" title="Ansible" class="md-nav__link">
       Ansible
     </a>
   </li>
@@ -618,7 +614,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../ipset/" title="Ipset" class="md-nav__link">
+    <a href="../../operation-system/linux/ipset/" title="Ipset" class="md-nav__link">
       Ipset
     </a>
   </li>
@@ -628,45 +624,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Iptables
-      </label>
-    
-    <a href="./" title="Iptables" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../operation-system/linux/iptables/" title="Iptables" class="md-nav__link">
       Iptables
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#iptables" title="iptables常用命令" class="md-nav__link">
-    iptables常用命令
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -676,7 +638,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../ldap/" title="Centos7安装LDAP" class="md-nav__link">
+    <a href="../../operation-system/linux/ldap/" title="Centos7安装LDAP" class="md-nav__link">
       Centos7安装LDAP
     </a>
   </li>
@@ -712,7 +674,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../windows/windows-password/" title="Windows密码基础" class="md-nav__link">
+    <a href="../../operation-system/windows/windows-password/" title="Windows密码基础" class="md-nav__link">
       Windows密码基础
     </a>
   </li>
@@ -732,10 +694,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
     
     <label class="md-nav__link" for="nav-7">
       Program development
@@ -753,7 +717,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../program-development/" title="程序开发概述" class="md-nav__link">
+    <a href="../" title="程序开发概述" class="md-nav__link">
       程序开发概述
     </a>
   </li>
@@ -763,11 +727,63 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../../program-development/python-modules/" title="python模块学习" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        python模块学习
+      </label>
+    
+    <a href="./" title="python模块学习" class="md-nav__link md-nav__link--active">
       python模块学习
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#anaconda" title="anaconda" class="md-nav__link">
+    anaconda
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#virtualenv" title="virtualenv" class="md-nav__link">
+    virtualenv
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mysqldb" title="MySQLdb" class="md-nav__link">
+    MySQLdb
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -796,7 +812,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../program-development/python/" title="python开发概述" class="md-nav__link">
+    <a href="../python/" title="python开发概述" class="md-nav__link">
       python开发概述
     </a>
   </li>
@@ -808,7 +824,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../program-development/python/python-module/" title="python模块" class="md-nav__link">
+    <a href="../python/python-module/" title="python模块" class="md-nav__link">
       python模块
     </a>
   </li>
@@ -844,7 +860,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../program-development/ruby/" title="ruby开发概述" class="md-nav__link">
+    <a href="../ruby/" title="ruby开发概述" class="md-nav__link">
       ruby开发概述
     </a>
   </li>
@@ -885,7 +901,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../protocol-analysis/" title="协议分析概述" class="md-nav__link">
+    <a href="../../protocol-analysis/" title="协议分析概述" class="md-nav__link">
       协议分析概述
     </a>
   </li>
@@ -921,7 +937,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../software/" title="软件使用指南" class="md-nav__link">
+    <a href="../../software/" title="软件使用指南" class="md-nav__link">
       软件使用指南
     </a>
   </li>
@@ -933,7 +949,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../software/git-command/" title="github command" class="md-nav__link">
+    <a href="../../software/git-command/" title="github command" class="md-nav__link">
       github command
     </a>
   </li>
@@ -945,7 +961,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../software/nginx/" title="Nginx" class="md-nav__link">
+    <a href="../../software/nginx/" title="Nginx" class="md-nav__link">
       Nginx
     </a>
   </li>
@@ -970,13 +986,29 @@
 <nav class="md-nav md-nav--secondary">
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#iptables" title="iptables常用命令" class="md-nav__link">
-    iptables常用命令
+  <a href="#anaconda" title="anaconda" class="md-nav__link">
+    anaconda
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#virtualenv" title="virtualenv" class="md-nav__link">
+    virtualenv
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mysqldb" title="MySQLdb" class="md-nav__link">
+    MySQLdb
   </a>
   
 </li>
@@ -998,17 +1030,87 @@
               
                 
                 
-                  <h1>Iptables</h1>
-                
-                <h2 id="iptables">iptables常用命令</h2>
-<pre><code># 根据XFF封禁IP
-iptables -A INPUT -p tcp --dport 80 -m string --algo kmp --string &quot;X-Forwarded-For: IP&quot; -j DROP
+                <h1 id="python">python模块学习</h1>
+<h2 id="anaconda">anaconda</h2>
+<p><a href="https://pypi.org/project/anaconda/">官网地址</a></p>
+<ul>
+<li><strong>安装anaconda</strong></li>
+</ul>
+<p>Centos7安装：依赖wget，vim，unzip，bzip2(必须安装)</p>
+<ul>
+<li><strong>常见操作</strong></li>
+</ul>
+<pre><code>conda --version # 查看是否成功安装
+conda list -n python34 # 查看指定环境已安装包
+conda search numpy # 查找package信息
+conda install -n python34 numpy # 指定环境安装包
+conda update -n python34 numpy # 更新包
+conda update conda # 更新conda
+conda update anaconda # 更新anaconada
+conda update python # 更新python
+</code></pre>
 
-使用ipset
-iptables -A INPUT -m set --match-set security src -p tcp --destination-port 443 -j DROP
+<ul>
+<li><strong>环境管理</strong></li>
+</ul>
+<pre><code>conda create --name python34 python=3.4 # 创建一个名为python34的环境，指定python版本3.4(自动寻找最新版本)
 
-# 查看编号
-iptables -nL --line-number
+activate python34 # windows 或者 
+source activate python34 # mac/linux
+
+python --version # 查看此时的python版本
+
+deactivate python34 # windows 或者 
+source deactivate python34 # mac/linux
+
+conda remove --name python34 --all # 删除
+
+conda info -e # 查看当前所在的分支
+</code></pre>
+
+<ul>
+<li><strong>包管理</strong></li>
+</ul>
+<pre><code>conda install scipy # 安装scipy
+conda list # 查看已安装的packages
+</code></pre>
+
+<ul>
+<li><strong>镜像操作</strong></li>
+</ul>
+<pre><code>conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/ # 添加镜像
+conda config --set show_channel_urls yes # 设置搜索时显示通道地址
+</code></pre>
+
+<h2 id="virtualenv">virtualenv</h2>
+<p><a href="https://pypi.org/project/virtualenv/">官网地址</a></p>
+<pre><code># 安装
+pip install virtualenv
+
+# 创建环境
+# 安装python3.6
+yum install python36.x86_64 python36-devel.x86_64 python36-libs.x86_64 -y
+
+# 创建一个python3的虚拟环境
+virtualenv py3 --python=python3.6
+
+# 激活环境
+source py3/bin/activate
+
+# 退出环境
+deactivate
+
+# 创建软链接
+echo &quot;alias py3='source /root/py3/bin/activate'&quot; &gt;&gt; /root/.bashrc
+source root/.bashrc
+</code></pre>
+
+<h2 id="mysqldb">MySQLdb</h2>
+<p><a href="https://pypi.org/project/MySQL-python/">官网地址</a></p>
+<pre><code>pip install mysql-python
+pip install MySQL-python==1.2.5
+
+# 备注：报错 mysql_config not found，通过安装mysql-devel解决
 </code></pre>
                 
                   
@@ -1030,7 +1132,7 @@ iptables -nL --line-number
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../ipset/" title="Ipset" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../" title="程序开发概述" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1039,19 +1141,19 @@ iptables -nL --line-number
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Ipset
+                程序开发概述
               </span>
             </div>
           </a>
         
         
-          <a href="../ldap/" title="Centos7安装LDAP" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../python/" title="python开发概述" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Centos7安装LDAP
+                python开发概述
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -1085,9 +1187,9 @@ iptables -nL --line-number
       
     </div>
     
-      <script src="../../../assets/javascripts/application.9e1f3b71.js"></script>
+      <script src="../../assets/javascripts/application.9e1f3b71.js"></script>
       
-      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
       
     
     
