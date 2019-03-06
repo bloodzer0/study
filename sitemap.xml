@@ -66,6 +66,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://bloodzer0.github.io/study/operation-system/linux/ansible/</loc>
+     <lastmod>2019-03-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://bloodzer0.github.io/study/operation-system/linux/ipset/</loc>
      <lastmod>2019-03-05</lastmod>
      <changefreq>daily</changefreq>
